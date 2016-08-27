@@ -43,5 +43,13 @@ class Main extends MX_Controller
 			redirect('/user','refresh');
 		}
 	}
+	function ticket($id)
+	{
+		$pass['data'] = $this->main_model->getticketinfo($id);
+		$pass['comment'] = $this->main_model->getcomments($id);
+
+		$this->_render_page('ticket_page',$pass);
+
+	}
 	
 }

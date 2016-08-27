@@ -241,7 +241,6 @@
 						<div class="flex-row flex-align-middle">
 							<div class="flex-shrink flex-columns">
 								<a class="navbar-logo" href="<?php echo base_url('/');?>">
-									<img src="<?php echo base_url('/assets/images/images/logo-white.png');?>" alt="Logo" />
 								</a>
 							</div>
 							<div class="flex-columns">
@@ -250,17 +249,7 @@
 									<div class="navbar-mini">
 										<ul class="clearfix">
 										
-											<li class="dropdown bt-dropdown-click hidden-xs">
-												<a id="language-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-													<i class="ion-social-usd hidden-xss"></i> Dollar
-													<span class="caret"></span>
-												</a>
-												<ul class="dropdown-menu" aria-labelledby="language-dropdown">
-													<li><a href="#"><i class="ion-social-usd"></i> Dollar</a></li>
-													<li><a href="#"><i class="ion-social-euro"></i> Europe</a></li>
-													<li><a href="#"><i class="ion-social-yen"></i> Yen</a></li>
-												</ul>
-											</li>
+		
 											
 											<li class="dropdown bt-dropdown-click hidden-xs">
 												<a id="currncy-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -305,7 +294,6 @@
 
 					</div>
 					
-				</div>
 				
 
 
@@ -326,33 +314,13 @@
 								
 								<div id="navbar" class="collapse navbar-collapse navbar-arrow">
 									<ul class="nav navbar-nav" id="responsive-menu">
-										<li><a href="index.html">Home</a>
-											<ul>
-												<li><a href="index.html">Home 01 - Default</a></li>
-												<li><a href="index-02.html">Home 02 - Background Slider</a></li>
-												<li><a href="index-03.html">Home 03 - Video Background</a></li>
-												<li><a href="index-04.html">Home 04 - Smaller Package Items</a></li>
-												<li>
-													<a href="#">Color Variants</a>
-													 <ul>
-														<li><a href="index.html">Default Color</a></li>
-														<li><a href="index-color-02.html">Color 02</a></li>
-														<li><a href="index-color-03.html">Color 03</a></li>
-														<li><a href="index-color-04.html">Color 04</a></li>
-														<li><a href="index-color-05.html">Color 05</a></li>
-													</ul>
-												</li>
-											</ul>
+										<li><a href="">Home</a>
 										</li>
-										<li><a href="result-grid.html">Tour Package</a>
-											<ul>
-												<li><a href="result-list.html">Result - List</a></li>
-												<li><a href="result-grid.html">Result - Grid</a></li>
-												<li><a href="detail-page.html">Detail Page</a></li>
-											</ul>
+										<li><a href="">Raise a Ticket</a>
+											
 										</li>
-										<li><a href="about.html">About Us</a></li>
-										<li><a href="blog.html">Blog</a>
+										<li><a href="about.html">My Issues</a></li>
+										<li><a href="blog.html">My Profile</a>
 											<ul>
 												<li><a href="blog.html">Blog</a></li>
 												<li><a href="blog-single.html">Blog Single</a></li>

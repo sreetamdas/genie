@@ -7,6 +7,20 @@ class Main_model extends CI_Model
 		parent::__construct();
 		$this->load->helper('date');
     }
-	
+    function getticketinfo($id){
+    	$data = $this->db->get_where('ticket',array('iid'=>$id))->result_array();
+    	$data['issuer'] = $this->db->select('first_name')->where('id',$data[0]['uid'])->get('users')->result_array();
+    	$data['issuer'] = $data['issuer'][0]['first_name'];
+    
+    	return $data;
+    }
+    function getcomments($id){
+    	$dataobj = $this->db->get_where('comments',array('iid'=>$id));
+    	$data = $dataobj->result_array();    
+    	for($i=0;$i<$dataobj->num_rows();$i++){
+    	$data[$i]['commenter'] = $this->db->select('first_name')->where('id',$data[$i]['id'])->get('users')->result_array();
+    	}
+		return $data;
+	}
 }
 

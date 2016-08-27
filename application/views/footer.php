@@ -1,4 +1,4 @@
-		<footer class="footer">
+<!-- 		<footer class="footer">
 			
 			<div class="container">
 			
@@ -93,7 +93,7 @@
 			</div>
 			
 		</footer>
-		
+		 -->
 	</div>  <!-- end Container Wrapper -->
  
 
