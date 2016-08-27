@@ -9,10 +9,10 @@
 						<div class="col-xs-12 col-sm-5 col-md-3">
 						
 							<div class="footer-logo">
-								<img src="images/logo-white.png" alt="Logo" />
+								<h1 class="footer-title">Genie</h1>
 							</div>
 							
-							<p class="footer-address">324 Yarang Road, T.Chabangtigo, Muanng Pattani 9400 <br/> <i class="fa fa-phone"></i> +66 28 878 5452 <br/> <i class="fa fa-phone"></i> +66 2 547 2223 <br/> <i class="fa fa-envelope-o"></i> <a href="#">support@tourpacker.com</a></p>
+							<p class="footer-address">3Bleh bleh <br/> <i class="fa fa-phone"></i> +66 28 878 5452 <br/> <i class="fa fa-phone"></i> +66 2 547 2223 <br/> <i class="fa fa-envelope-o"></i> <a href="#">support@tourpacker.com</a></p>
 							
 							<div class="footer-social">
 							
