@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+.DS_Store
+=======
 */config/development
 */logs/log-*.php
 !*/logs/index.html
 */cache/*
 !*/cache/index.html
 !*/cache/.htaccess
+>>>>>>> 7aa7c9f6b1dd97008fd0768434681c9e963c8268
