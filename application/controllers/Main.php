@@ -30,6 +30,18 @@ class Main extends MX_Controller
 		
 		$this->_render_page('index');
 	}
+	function dashboard()
+	{
+		if($this->ion_auth->in_group(3))
+		{
 
+			redirect('/mod','refresh');
+		}
+
+		if($this->ion_auth->in_group(2))
+		{
+			redirect('/user','refresh');
+		}
+	}
 	
 }

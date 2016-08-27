@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Starter</title>
+  <title>Genie</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -236,7 +236,7 @@ desired effect
           <img src="<?php echo base_url('assets/dist/img/user2-160x160.jpg');?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Admin</p>
+          <p>Mod</p>
           <!-- Status -->
           <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
         </div>
@@ -258,10 +258,8 @@ desired effect
       <ul class="sidebar-menu">
         <li class="header">Oparations</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="<?php echo base_url('/admin/alltickets');?>"><i class="fa fa-link"></i> <span>All Tickets</span></a></li>
-        <li><a href="<?php echo base_url('/admin/addmoderator')?>"><i class="fa fa-link"></i> <span> Add Moderator</span></a></li>
-        
-        <li class="treeview">
+        <li><a href="<?php echo base_url('/mod/tickets');?>"><i class="fa fa-link"></i> <span>All Tickets</span></a></li>
+       <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>

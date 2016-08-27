@@ -26,123 +26,32 @@ class Admin extends MX_Controller
  {
  	$this->_render_page('sample');
  }
- function create_supplier()
+ function addmoderator()
  {
- 	redirect('auth/register/supplier',refresh);
- }
- function featured()
- {
- 	$pass['data'] = $this->admin_model->getprod();
 
- 	$this->_render_page('featured',$pass);
+ 	if($this->input->post('mod')&&$this->input->post('tag'))
+  {
+    $pass['mid'] = $this->input->post('mod');
+    $pass['tags'] = $this->input->post('tag');
+    if($this->admin_model->addmoderators($pass)){
+      print_r("Moderator Added");
+      $this->_render_page('addmoderator');
+    
+    }
+    else{
+    print_r("Moderator not Added");
+    $this->_render_page('addmoderator');
+  }}
+  else{    
+      $this->_render_page('addmoderator');
 
+  }
  }
- function feat()
+ function alltickets()
  {
- 	$data = $this->admin_model->getprod();
- 	foreach($data as $row){
- 		if($this->input->post('cb'.$row['p_no']))
- 		{
- 			$a = $this->input->post('cb'.$row['p_no']);
- 			$this->admin_model->update_feat($a,1);
- 		}else
- 		{
- 			$this->admin_model->update_feat($row['p_no'],0);
- 		}
- 		
- 	}
- 	$this->featured();
-
- }
- function addcountry()
- {
- 	if($this->input->post('country'))
- 	{
- 		$country =  $this->input->post('country');
- 		if($this->admin_model->addcountry($country))
- 		{ 	print_r("1");
- 			redirect('admin','refresh');
- 		}
- 		else 
- 		{	
- 			print_r("Add country failed");
- 			redirect('admin/addcountry');
- 		}
-
- 	}
- 	else
- 	$this->_render_page('country');
- }
- function allcountry()
- {
- 	$pass['data']= $this->admin_model->allcountry();
-
- 	$this->_render_page('allcountry',$pass);
- }
- function delcountry($id)
- {
- 	if($this->admin_model->delcntry($id))
- 	{
- 		redirect('admin/allcountry','refresh');
- 		print_r("Sucessfully Deleted");
- 	}
- 	else
- 	{
- 		redirect('admin/allcountry','refresh');
- 		print_r("Unable to Delete");
- 	}
+  $pass['data'] = $this->admin_model->getalltickets();
+  $this->_render_page('alltickets',$pass);
 
  }
- function uploadheader()
- {
- 	$noi = $this->admin_model->getval('noi_header');
- 	$this->_render_page('headerimg',$noi[0]);
- }
- public function do_upload($opt,$noi=0)
- {       $id = $this->ion_auth->get_user_id();
-
-            
-          if (!is_dir('./assets/images/header')) 
-                          {
-                              mkdir('./assets/images/header');
-                          }
-           
-                $config['upload_path']          = './assets/images/header';
-                $config['allowed_types']        = 'jpg';
-     
-                
-                $n = $noi + 1;
-                $config['file_name']            = 'img_'.$n;
-              	
-                $this->load->library('upload', $config);
-              
-                if ( ! $this->upload->do_upload('userfile'))
-                {       
-                        $error = array('error' => $this->upload->display_errors());
-                        print_r($error);
-
-                 
-                        print_r("Error in storing, Retry");
-                        $pass['value'] = $noi;
-                        $this->_render_page('headerimg',$pass);
-                }
-                else
-                {       
-                        $data = array('upload_data' => $this->upload->data());
-                        
-                          $this->admin_model->update_dict('noi_header',$n);
-                          print_r("Success");
-                          $config['image_library'] = 'gd2';
-                          $config['source_image'] =  base_url('assets/images/header/img_'.$n.'jpg');;
-                          $config['maintain_ratio'] = TRUE;
-                          $config['width']         = 500;
-                          $config['height']       = 300;
-
-                          $this->load->library('image_lib', $config);
-
-                          if($this->image_lib->resize()) echo "Success";
-                          $pass['value'] = $n;
-                        $this->_render_page('headerimg',$pass);
-                }
-        }
+ 
 }
