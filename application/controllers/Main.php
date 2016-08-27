@@ -51,5 +51,16 @@ class Main extends MX_Controller
 		$this->_render_page('ticket_page',$pass);
 
 	}
+	function addcomment($id)
+	{
+		if($this->input->post('commentbox'))
+		{
+			$pass['comment'] = $this->input->post('commentbox');
+			$pass['iid'] = $id;
+			$pass['id'] = $this->ion_auth->get_user_id();
+			$this->main_model->addcomment($pass); 
+		}
+		$this->ticket($id);
+	}
 	
 }

@@ -278,7 +278,7 @@
 												</ul>
 											</li>
 											<?php if($this->ion_auth->logged_in()){
-												echo('<li class="user-action"><a data-toggle="tooltip" data-placement="bottom" title="Go to dashboard" class="btn" href="'.base_url('/main/dashboard').'">'.$user['first_name'].'</a></li>');
+												echo('<li class="user-action"><a data-toggle="tooltip" data-placement="bottom" title="Go to dashboard" class="btn" href="'.base_url('/main/dashboard').'">'.'</a></li>');
 											    echo('<li class="user-action"><a href="'.base_url('/auth/logout').'" class="btn">Sign Out</a></li>');}
 											else{
 											echo ('<li class="user-action">

@@ -68,7 +68,7 @@
 										
 										<div class="review-form">
 											
-											<form class="">
+											<form method="POST" action="<?php echo base_url('/main/addcomment/'.$data[0]['iid'])?>">
 											
 												<div class="row">
 												
@@ -78,14 +78,14 @@
 													
 														<div class="form-group">
 															<label>Comment: </label>
-															<textarea class="form-control form-control-sm" rows="5"></textarea>
+															<textarea class="form-control form-control-sm" name="commentbox" rows="5"></textarea>
 														</div>
 													</div>
 													
 													<div class="clear"></div>
 													
 													<div class="col-sm-12 col-md-8 mt-10">
-														<a href="#" class="btn btn-primary">Comment</a>
+														<button action="Submit" class="btn btn-primary">Comment</button>
 													</div>
 													
 												</div>

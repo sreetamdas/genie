@@ -22,5 +22,8 @@ class Main_model extends CI_Model
     	}
 		return $data;
 	}
+    function addcomment($data){
+        $this->db->insert('comments',$data);
+    }
 }
 
