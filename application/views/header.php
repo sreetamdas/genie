@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Tour Packer</title>
+	<title>Genie</title>
 	<meta name="description" content="HTML Responsive Template for Tour Agency or Company Based on Twitter Bootstrap 3.x.x" />
 	<meta name="keywords" content="tour package, holiday, hotel, vocation, booking, trip, travel, tourism, tourist" />
 	<meta name="author" content="crenoveative">
@@ -21,10 +21,12 @@
 	<link rel="shortcut icon" href="<?php echo base_url('/assets/images/images/ico/favicon.png');?>">
 
 	<!-- CSS Plugins -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/bootstrap/css/bootstrap.min.css');?>" media="screen">	
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/bootstrap-v4.css');?>" media="screen">	
 	<link href="<?php echo base_url('/assets/css/animate.css');?>" rel="stylesheet">
 	<link href="<?php echo base_url('/assets/css/main.css');?>" rel="stylesheet">
 	<link href="<?php echo base_url('/assets/css/component.css');?>" rel="stylesheet">
+
+	<link href="<?php echo base_url('/assets/css/custom.css');?>" rel="stylesheet">
 	
 	<!-- CSS Font Icons -->
 	<!-- CSS Font Icons -->
@@ -225,12 +227,11 @@
 	<!-- END # MODAL LOGIN -->
 	
 	<!-- start Container Wrapper -->
-	<div class="container-wrapper">
 
 		<header id="header">
 	  
 			<!-- start Navbar (Header) -->
-			<nav class="navbar navbar-primary navbar-fixed-top navbar-sticky-function">
+			<nav class="navbar navbar-dark bg-inverse navbar-fixed-top navbar-sticky-function">
 
 				<div class="navbar-top">
 				
@@ -238,8 +239,8 @@
 						
 						<div class="flex-row flex-align-middle">
 							<div class="flex-shrink flex-columns">
-								<a class="navbar-logo" href="<?php echo base_url('/');?>">
-									<img src="<?php echo base_url('/assets/images/images/logo-white.png');?>" alt="Logo" />
+								<a class="navbar-brand" id="logo" href="<?php echo base_url('/');?>">
+									Genie
 								</a>
 							</div>
 							<div class="flex-columns">

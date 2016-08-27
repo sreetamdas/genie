@@ -18,9 +18,9 @@ class Main extends MX_Controller
  	function _render_page($view, $data1=null)
  	{
  		
-	$this->load->view('header', $pass);
+	$this->load->view('header');
 	$this->load->view($view, $data1);
-	$this->load->view('footer', $pass);
+	$this->load->view('footer');
 	}
 
 	function index()
