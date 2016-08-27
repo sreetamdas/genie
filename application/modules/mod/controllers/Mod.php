@@ -12,9 +12,8 @@ class Mod extends MX_Controller
 			redirect('/auth/login/','refresh');
 		if(!$this->ion_auth->in_group(3))
 			redirect('/auth/login/','refresh');
-    $info = $this->mod_model->getmodinfo($this->ion_auth->get_user_id());
-    print_r($info);
-  }
+    $this->info = $this->mod_model->getmodinfo($this->ion_auth->get_user_id());
+      }
     function _render_page($view,$data=null)
  {
 	
@@ -30,13 +29,13 @@ class Mod extends MX_Controller
  function tickets()
  {
   $pass['data'] = $this->mod_model->getalltickets();
-  $tag = $this->$info;
-    print_r($tag);
+  $tag = $this->info[0]['tags'];
   $arrayobj = new ArrayObject();
   foreach($pass['data'] as $row){
     $tags = explode(',',$row['tags']);
     $is_present = array_search($tag,$tags);
-    if($is_present){
+
+    if($is_present>-1){
       $arrayobj->append($row);
     }
   }

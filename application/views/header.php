@@ -50,6 +50,8 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+			
+
 	
 </head>
 
@@ -314,4 +316,86 @@
 
 		</header>
 		
+<div class="navbar-bottom hidden-sm hidden-xs">
+				
+					<div class="container">
+					
+						<div class="row">
+						
+							<div class="col-sm-9">
+								
+								<div id="navbar" class="collapse navbar-collapse navbar-arrow">
+									<ul class="nav navbar-nav" id="responsive-menu">
+										<li><a href="index.html">Home</a>
+											<ul>
+												<li><a href="index.html">Home 01 - Default</a></li>
+												<li><a href="index-02.html">Home 02 - Background Slider</a></li>
+												<li><a href="index-03.html">Home 03 - Video Background</a></li>
+												<li><a href="index-04.html">Home 04 - Smaller Package Items</a></li>
+												<li>
+													<a href="#">Color Variants</a>
+													 <ul>
+														<li><a href="index.html">Default Color</a></li>
+														<li><a href="index-color-02.html">Color 02</a></li>
+														<li><a href="index-color-03.html">Color 03</a></li>
+														<li><a href="index-color-04.html">Color 04</a></li>
+														<li><a href="index-color-05.html">Color 05</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><a href="result-grid.html">Tour Package</a>
+											<ul>
+												<li><a href="result-list.html">Result - List</a></li>
+												<li><a href="result-grid.html">Result - Grid</a></li>
+												<li><a href="detail-page.html">Detail Page</a></li>
+											</ul>
+										</li>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="blog.html">Blog</a>
+											<ul>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="blog-single.html">Blog Single</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Pages</a>
+											<ul>
+												<li><a href="result-list.html">Result - List</a></li>
+												<li><a href="result-grid.html">Result - Grid</a></li>
+												<li><a href="detail-page.html">Detail Page</a></li>
+												<li><a href="payment.html">Payment</a></li>
+												<li><a href="confirmation.html">Confirmation</a></li>
+												<li><a href="faq.html">FAQ</a></li>
+												<li><a href="about.html">About Us</a></li>
+												<li><a href="static-page.html">Static Page</a></li>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="blog-single.html">Blog Single</a></li>
+												<li><a href="contact.html">Contact us</a></li>
+											</ul>
+										</li>
+										<li><a href="contact.html">Contact us</a></li>
+									</ul>
+								</div><!--/.nav-collapse -->
+								
+							</div>
+							
+							<div class="col-sm-3">
+							
+								<div class="navbar-phone"><i class="fa fa-phone"></i> Call us: +66 28 878 5452</div>
+							
+							</div>
+
+						</div>
+						
+					</div>
+				
+				</div>
+
+				<div id="slicknav-mobile"></div>
+				
+			</nav>
+			<!-- end Navbar (Header) -->
+
+		</header>
+
 		<div class="clear"></div>
