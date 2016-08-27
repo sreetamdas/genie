@@ -232,7 +232,7 @@
 		<header id="header">
 	  
 			<!-- start Navbar (Header) -->
-			<nav class="navbar navbar-primary navbar-fixed-top navbar-sticky-function">
+			<nav class="navbar navbar-dark bg-inverse navbar-fixed-top navbar-sticky-function">
 
 				<div class="navbar-top">
 				
