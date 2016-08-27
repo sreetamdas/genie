@@ -94,7 +94,59 @@ ul.static-page-menu li.active a { border-right-color: #575FCF !important; }
 #back-to-top a:hover { background-color: #3D46BA; border-color: #3D46BA; }
 
 
+.btn-outline-info {
+    color: #5bc0de;
+    background-image: none;
+    background-color: transparent;
+    border-color: #5bc0de
+}
 
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #5bc0de
+}
+
+.btn-outline-info.focus,
+.btn-outline-info:focus {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #5bc0de
+}
+
+.btn-outline-info.active,
+.btn-outline-info:active,
+.open>.btn-outline-info.dropdown-toggle {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #5bc0de
+}
+
+.btn-outline-info.active.focus,
+.btn-outline-info.active:focus,
+.btn-outline-info.active:hover,
+.btn-outline-info:active.focus,
+.btn-outline-info:active:focus,
+.btn-outline-info:active:hover,
+.open>.btn-outline-info.dropdown-toggle.focus,
+.open>.btn-outline-info.dropdown-toggle:focus,
+.open>.btn-outline-info.dropdown-toggle:hover {
+    color: #fff;
+    background-color: #269abc;
+    border-color: #1f7e9a
+}
+
+.btn-outline-info.disabled.focus,
+.btn-outline-info.disabled:focus,
+.btn-outline-info:disabled.focus,
+.btn-outline-info:disabled:focus {
+    border-color: #b0e1ef
+}
+
+.btn-outline-info.disabled:hover,
+.btn-outline-info:disabled:hover {
+    border-color: #b0e1ef
+}
 
 
 
