@@ -232,7 +232,7 @@
 		<header id="header">
 	  
 			<!-- start Navbar (Header) -->
-			<nav class="navbar navbar-dark bg-inverse navbar-fixed-top navbar-sticky-function">
+			<nav class="navbar navbar-primary navbar-fixed-top navbar-sticky-function">
 
 				<div class="navbar-top">
 				
@@ -240,80 +240,13 @@
 						
 						<div class="flex-row flex-align-middle">
 							<div class="flex-shrink flex-columns">
-								<a class="navbar-logo" href="<?php echo base_url('/');?>">
-								</a>
+								<h1 id="logo" style="color: white">Genie</h1>
 							</div>
 							<div class="flex-columns">
 								<div class="pull-right">
 								
 									<div class="navbar-mini">
-										<ul class="clearfix">
-										
-		
-											
-											<li class="dropdown bt-dropdown-click hidden-xs">
-												<a id="currncy-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-													<i class="ion-android-globe hidden-xss"></i> English
-													<span class="caret"></span>
-												</a>
-												<ul class="dropdown-menu" aria-labelledby="language-dropdown">
-													<li><a href="#">English</a></li>
-													<li><a href="#">France</a></li>
-													<li><a href="#">Japanese</a></li>
-												</ul>
-											</li>
-											
-											<li class="dropdown bt-dropdown-click visible-xs">
-												<a id="currncy-language-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-													<i class="fa fa-cog"></i>
-												</a>
-												<ul class="dropdown-menu" aria-labelledby="language-dropdown">
-													<li><a href="#"><i class="ion-social-usd"></i> Dollar</a></li>
-													<li><a href="#"><i class="ion-social-euro"></i> Europe</a></li>
-													<li><a href="#"><i class="ion-social-yen"></i> Yen</a></li>
-													<li class="divider"></li>
-													<li><a href="#">English</a></li>
-													<li><a href="#">France</a></li>
-													<li><a href="#">Japanese</a></li>
-												</ul>
-											</li>
-											<?php if($this->ion_auth->logged_in()){
-												echo('<li class="user-action"><a data-toggle="tooltip" data-placement="bottom" title="Go to dashboard" class="btn" href="'.base_url('/main/dashboard').'">'.'</a></li>');
-											    echo('<li class="user-action"><a href="'.base_url('/auth/logout').'" class="btn">Sign Out</a></li>');}
-											else{
-											echo ('<li class="user-action">
-												<a data-toggle="modal" href="#loginModal" class="btn">Sign up/in</a>
-											</li>');
-											}	?>
-										</ul>
-									</div>
-						
-								</div>
-							</div>
-						</div>
-
-					</div>
-					
-				
-
-
-				<div id="slicknav-mobile"></div>
-				
-			</nav>
-			<!-- end Navbar (Header) -->
-
-		</header>
-		
-<div class="navbar-bottom hidden-sm hidden-xs">
-				
-					<div class="container">
-					
-						<div class="row">
-						
-							<div class="col-sm-9">
-								
-								<div id="navbar" class="collapse navbar-collapse navbar-arrow">
-									<ul class="nav navbar-nav" id="responsive-menu">
+										<ul class="nav navbar-nav" id="responsive-menu">
 										<li><a href="">Home</a>
 										</li>
 										<li><a href="">Raise a Ticket</a>
@@ -342,22 +275,25 @@
 											</ul>
 										</li>
 										<li><a href="contact.html">Contact us</a></li>
+										<?php if($this->ion_auth->logged_in()){
+												echo('<li class="user-action"><a data-toggle="tooltip" data-placement="bottom" title="Go to dashboard" class="btn" href="'.base_url('/main/dashboard').'">'.'</a></li>');
+											    echo('<li class="user-action"><a href="'.base_url('/auth/logout').'" class="btn">Sign Out</a></li>');}
+											else{
+											echo ('<li class="user-action">
+												<a data-toggle="modal" href="#loginModal" class="btn">Sign up/in</a>
+											</li>');
+											}	?>
 									</ul>
-								</div><!--/.nav-collapse -->
-								
-							</div>
-							
-							<div class="col-sm-3">
-							
-								<div class="navbar-phone"><i class="fa fa-phone"></i> Call us: +66 28 878 5452</div>
-							
-							</div>
-
-						</div>
+									</div>
 						
+								</div>
+							</div>
+						</div>
+
 					</div>
+					
 				
-				</div>
+
 
 				<div id="slicknav-mobile"></div>
 				
