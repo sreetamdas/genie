@@ -2571,7 +2571,6 @@ ul.review-list {
 
 ul.review-list > li {
     position: relative;
-    border-bottom: 1px solid #80b3ff;
     padding-bottom: 25px;
     margin-bottom: 25px;
 }
